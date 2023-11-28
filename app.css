@@ -1,0 +1,227 @@
+/* Updated CSS */
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; /* Thumb color */
+    border-radius: 10px;
+}
+
+/* Track style */
+::-webkit-scrollbar-track {
+    background-color: #fff; /* Track color */
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#root {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav{
+    border-bottom: black;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 30px; /* Adjust the size based on your preference */
+    font-family: 'Ephesis', sans-serif; /* Replace 'YourFancyFont' with the desired font family */
+    margin-right: 29px; /* Add space between nav elements */
+    color: black !important; /* Change the color to black */
+}
+
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.title,
+.tagline,
+.section-title {
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Ephesis';
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+.tagline {
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: 'Ephesis', sans-serif;
+}
+
+.about-container,
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding-right: 120px;
+
+}
+.about-container{
+    height: 100vh;
+}
+
+.about-text,
+.home-text {
+    width: 55%;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 20px; /* Adjust padding based on your preference */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 20px; /* Adjust padding based on your preference */
+}
+
+.section-title {
+    font-family: 'Ephesis', sans-serif; /* Apply Ephesis font family */
+    font-size: 48px; /* Adjust the size based on your preference */
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    width: 80%; /* Adjust the width based on your preference */
+    text-align: left;
+    font-family: 'Ephesis', sans-serif; /* Apply Ephesis font family */
+    font-size: 40px; /* Adjust the size based on your preference */
+    font-weight: bold;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover,
+.home-image img:hover {
+    transform: scale(1.1);
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust the alignment of car model images */
+.vertical-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.vertical-images img {
+    width: 50%; /* Adjust the width based on your preference */
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.vertical-images img:hover {
+    transform: scale(1.1);
+}
+
+.section-title{
+    font-family: 'Ephesis', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.content>p{
+    font-family: 'Ephesis', sans-serif;
+    font-size: x-large;
+}
+
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .about-text {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .home-container,
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .home-image,
+    .about-image {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .vertical-images img {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
